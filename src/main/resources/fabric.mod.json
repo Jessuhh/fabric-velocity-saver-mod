@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "velocitysavermod",
+  "version": "${version}",
+
+  "name": "Velocity Saver Mod",
+  "description": "This mod will save your position along with your velocity. Useful for making multi-segment runs.",
+  "authors": [
+    "Jessuh"
+  ],
+  "contact": {
+    "discord": "Jessuh#6836",
+    "sources": "N/A yet"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.jessuh.velocitysavermod.VelocitySaverMod"
+    ]
+  },
+  "mixins": [
+    "velocitysavermod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
